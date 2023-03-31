@@ -5,19 +5,26 @@
   <meta charset="utf-8">
   <title>benefactive.dev</title>
   <style>
-    .vh-center {
-        display: table-cell;
-        height: 300px;
-        text-align: center;
-        width: 300px;
-        vertical-align: middle;
-    }
+html,body,#container {
+    height:100%;
+}
+#container {
+    width:100%;
+    position:relative;
+}
+#container > img {
+    width:100%;
+    max-width:325;
+    position:absolute;
+    top:0; left:0; right:0; bottom:0;
+    margin:auto;
+}
   </style>
 </head>
 
 <body>
 
-  <div class="vh-center">
+  <div id="container">
       <img src="ducktape.png" alt="centered image" />
   </div>
 
